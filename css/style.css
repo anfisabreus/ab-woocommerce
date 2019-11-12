@@ -1,0 +1,126 @@
+div.screenshot, div.screenshot1, div.screenshotmp, div.screenshotwebm, div.screenshotimg, div.screenshotvideo, div.screenshotphoto, div.screen_slide_1, div.screen_slide_2, div.screen_slide_3, div.screen_slide_4, div.screen_slide_5, div.screen_slide_6, div.screen_slide_7, div.screen_slide_8, div.screen_slide_9, div.screen_slide_10, div.screenshot_bg_slide
+{float:left;
+	margin-left:1px;
+	position:relative;
+	width:344px;
+	margin-top:3px;
+	}
+	
+div.screenshot img, div.screenshot1 img, div.screenshotmp img, div.screenshotwebm img, div.screenshotvideo img, div.screenshotimg img, div.screenshotphoto img, div.screen_slide_1 img, div.screen_slide_2 img, div.screen_slide_3 img, div.screen_slide_4 img, div.screen_slide_5 img, div.screen_slide_6 img, div.screen_slide_7 img, div.screen_slide_8 img, div.screen_slide_9 img, div.screen_slide_10 img, div.screenshot_bg_slide img
+{	
+	background:#FAFAFA;
+	border-color:#ccc #eee #eee #ccc;
+	border-style:solid;
+	border-width:1px;
+	float:left;
+	max-width:334px;
+	padding:4px;
+	margin-bottom:10px;
+	}
+	
+.remove-image, .remove-image1, .remove-imagemp, .remove-imagewebm, .remove-imageimg, .remove-imagevideo, .remove-imagephoto, remove-slide-1, .remove-image-bg
+{	
+  background:url(ico-delete.png) no-repeat;
+  
+   width:16px;
+   bottom:4px;
+   display:block;
+	float:left;
+	padding:0;
+	position:absolute;
+	left:-4px;
+	text-indent:-9999px;
+	}
+#accordion .ui-accordion-header {
+	background-color: #ccc;
+	margin-bottom: 5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:12pt;
+	font-weight:normal;
+	color:#fff;
+	line-height: 42px;
+	
+}	
+#accordion .ui-accordion-header a {
+	color: #fff;
+	line-height: 42px;
+	display: block;
+	font-size: 12pt;
+	width: 100%;
+	text-indent: 10px;
+}
+	
+	#accordion .ui-accordion-header {
+	
+
+	background-color: #389abe;
+	background-image: -moz-linear-gradient(top,  #389abe 0%, #2a7b99 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#389abe), color-stop(100%,#2a7b99)); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top,  #389abe 0%,#2a7b99 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top,  #389abe 0%,#2a7b99 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top,  #389abe 0%,#2a7b99 100%); /* IE10+ */
+	background-image: linear-gradient(to bottom,  #389abe 0%,#2a7b99 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#389abe', endColorstr='#2a7b99',GradientType=0 ); /* IE6-9 */
+	
+}
+	
+
+#accordion .ui-accordion-header a {
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	border-right: 1px solid rgba(0, 0, 0, .2);
+	border-left: 1px solid rgba(0, 0, 0, .2);
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	border-top: 1px solid rgba(250, 250, 250, .2);
+}
+.wp-color-result
+{height:21px !important}
+
+.form-table table, .form-table td, .form-table th
+{border:1px solid #ccc !important;
+padding-left:20px;}
+.form-table th
+{width:250px;}
+
+.wp_themeSkin table.mceLayout,
+.wp_themeSkin table, .wp_themeSkin tbody, .wp_themeSkin a, .wp_themeSkin img, .wp_themeSkin tr, .wp_themeSkin div, .wp_themeSkin td, .wp_themeSkin iframe, .wp_themeSkin span, .wp_themeSkin *, .wp_themeSkin .mceText
+{border:none!important;}
+
+.quicktags-toolbar .button
+{background-color: transparent !important;}
+
+#update-nag, .update-nag
+{display:none}
+		
+ul#fontLis1p1, ul#fontLis1p2, ul#fontLis1p3, ul#fontLis2p1, ul#fontLis2p2, ul#fontLis2p3, ul#fontLis3p1, ul#fontLis3p2, ul#fontLis3p3, ul#fontLis4p1, ul#fontLis4p2, ul#fontLis4p3  {
+height:220px;
+overflow:hidden; 
+overflow-y:scroll;
+width: 100%;
+min-width: 50px;
+font-size: 1em;
+}
+
+ul#fontLis1p1  li, ul#fontLis1p2  li, ul#fontLis1p3  li, ul#fontLis2p1  li, ul#fontLis2p2  li, ul#fontLis2p2  li, ul#fontLis3p1  li, ul#fontLis3p2  li, ul#fontLis3p3  li, ul#fontLis4p1  li, ul#fontLis4p2  li, ul#fontLis4p2  li {
+
+padding: 7px 10px; 
+border: 1px solid #ccc;
+margin-bottom:1px;
+font-size:18px;
+-webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+ul#fontLis1p1  li.selected1p1, ul#fontLis1p2  li.selected1p2,  ul#fontLis1p3  li.selected1p3,  ul#fontLis2p1  li.selected2p1, ul#fontLis2p2  li.selected2p2 ,  ul#fontLis2p3  li.selected2p3, ul#fontLis3p1  li.selected3p1, ul#fontLis3p2  li.selected3p2,  ul#fontLis3p3  li.selected3p3, ul#fontLis4p1  li.selected4p1, ul#fontLis4p2  li.selected4p2,  ul#fontLis4p3  li.selected4p3 {
+    display: list-item;
+    background-color: #26b3ef;
+
+}
+
+#fontLis1p1 li:hover, #fontLis1p2 li:hover , #fontLis1p3 li:hover, #fontLis2p1 li:hover, #fontLis2p2 li:hover , #fontLis2p3 li:hover , #fontLis3p1 li:hover, #fontLis3p2 li:hover , #fontLis3p3 li:hover, #fontLis4p1 li:hover, #fontLis4p2 li:hover , #fontLis4p3 li:hover    {
+    background-color: #26b3ef;
+}
