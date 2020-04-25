@@ -1,13 +1,20 @@
 <?php
 /*
 Plugin Name: AB WooCommerce
-Version: 2.10
+Version: 2.12
 Plugin URI: http://anfisabreus.ru/
 Description: Плагин интеграции интернет магазина "WooCommerce" 
 Author: Анфиса Бреус
 Author URI: http://anfisabreus.ru/
+Text Domain: abwoocommerce
+Domain Path: /languages
 */
 
+
+function an_woocommerce_translation() {
+    load_plugin_textdomain( 'abwoocommerce', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+}
+add_action( 'plugins_loaded', 'an_woocommerce_translation' );
 
 function script_woocommerce_top()  {
 global $ab_woocommerce;
@@ -71,7 +78,7 @@ $defaults = array(
 'menu' => '2',
 'items_number' => '3',
 'sidebar' => '1',
-'testimonials_title'   => '<p style="text-align: center;"><span style="font-size: 32px; font-family: arial; color: #000000;">Отзывы покупателей</span></p>', 
+'testimonials_title'   => '<p style="text-align: center;"><span style="font-size: 32px; font-family: arial; color: #000000;">'.  __( 'Отзывы покупателей', 'abwoocommerce' ) .' </span></p>', 
 'homepage_border_round' => '0',
 'homepage_border' => '0',
 'homepage_border_color' => '#f7f9f9',
@@ -82,7 +89,7 @@ $defaults = array(
 'bg_level3' => '#FFCB03',
 'bg_level5' => '',
 'bg_level6' => '#0399CD',
-'featured_items_title' => '<p style="font-size: 32px; text-align: center;"><span style="color: #333333; font-family: arial;">Наши товары</span></p>',
+'featured_items_title' => '<p style="font-size: 32px; text-align: center;"><span style="color: #333333; font-family: arial;">'.  __( 'Наши товары', 'abwoocommerce' ) .'</span></p>',
 'padding_bottom1' => '30', 
 'padding_top1' => '30', 
 'padding' => '2',     
@@ -113,8 +120,8 @@ $defaults = array(
 'padding_top3' => '20',
 'padding_bottom3' => '0',
 'image_ads' => $imageurl.'shop2017.gif',
-'hp_heading_level3' => '<p style="font-size: 32px;"><span style="color: #ffffff; font-family: arial;">Мега Распродажа</span></p>
-<p style="font-size: 20px;"><span style="color: #ffffff; font-family: arial;">отличное предложение скидка 50% со всех товаров в магазине</span></p>',
+'hp_heading_level3' => '<p style="font-size: 32px;"><span style="color: #ffffff; font-family: arial;">'.  __( 'Мега Распродажа', 'abwoocommerce' ) .'</span></p>
+<p style="font-size: 20px;"><span style="color: #ffffff; font-family: arial;">'.  __( 'отличное предложение скидка 50% со всех товаров в магазине', 'abwoocommerce' ) .'</span></p>',
 'shop_button_homepage_ads' => '#0399CD',
 'shop_button_homepage_hover_ads' => '#000000',
 'shop_button_homepage_text_ads' => '#ffffff',
@@ -140,13 +147,13 @@ $defaults = array(
 'padding_bottom6' => '30',
 'padding_top6' => '30',
 'border_top_form' => '#000000',
-'form_title' => '<p style="font-size: 32px;"><span style="color: #ffffff; font-family: arial;">Получите скидку!</span></p>
-<p style="font-size: 18px;"><span style="color: #ffffff; font-family: arial;">Введите ваш Email и вы получите купон на скидку</span></p>',
+'form_title' => '<p style="font-size: 32px;"><span style="color: #ffffff; font-family: arial;">'.  __( 'Получите скидку!', 'abwoocommerce' ) .'</span></p>
+<p style="font-size: 18px;"><span style="color: #ffffff; font-family: arial;">'.  __( 'Введите ваш Email и вы получите купон на скидку', 'abwoocommerce' ) .'</span></p>',
 'shop_button_homepage_form' => '#FFCB03',
 'shop_button_homepage_hover_form' => '#000000',
 'shop_button_homepage_text_form' => '#ffffff',
 'shop_button_homepage_text_hover_form' => '#ffffff',
-'text_form_button' => 'Получить скидку!',
+'text_form_button' =>   __( 'Получить скидку!', 'abwoocommerce' ),
 'otzyvy_border_color' => '#0399CD',
 'otzyvy_border' => '3px',
 'ab_sub_form_smart' => '7',
@@ -156,7 +163,7 @@ $defaults = array(
 'button_align' => '1',
 'checkout_free_shipping' => '0',
 'show_cat_product' => '1',
-'related_product_text' => 'Похожие товары',
+'related_product_text' =>  __( 'Похожие товары', 'abwoocommerce' ),
 'show_cat_desc' => 0,
 'show_cat_title' => 0
 
@@ -256,7 +263,7 @@ function edd_woocommerce_plugin_updater() {
 	// setup the updater
 	$edd_updater = new EDD_WOOCOMMERCE_Plugin_Updater( EDD_WOOCOMMERCE_STORE_URL, __FILE__,
 		array(
-			'version' => '2.10',                    // current version number
+			'version' => '2.12',                    // current version number
 			'license' => $license_key,             // license key (used get_option above to retrieve from DB)
 			'item_id' => EDD_WOOCOMMERCE_ITEM_ID,       // ID of the product
 			'author'  => 'Anfisa Breus', // author of this plugin

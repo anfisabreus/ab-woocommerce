@@ -1,0 +1,815 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: AB WooCommerce\n"
+"POT-Creation-Date: 2020-04-03 15:56+0300\n"
+"PO-Revision-Date: 2020-04-03 15:55+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ab-woocommerce.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: EDD_WOOCOMMERCE_Plugin_Updater.php:228
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: EDD_WOOCOMMERCE_Plugin_Updater.php:236
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: EDD_WOOCOMMERCE_Plugin_Updater.php:474
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: EDD_WOOCOMMERCE_Plugin_Updater.php:474
+msgid "Error"
+msgstr ""
+
+#: ab-woocommerce.php:81
+msgid "Отзывы покупателей"
+msgstr ""
+
+#: ab-woocommerce.php:92
+msgid "Наши товары"
+msgstr ""
+
+#: ab-woocommerce.php:123
+msgid "Мега Распродажа"
+msgstr ""
+
+#: ab-woocommerce.php:124
+msgid "отличное предложение скидка 50% со всех товаров в магазине"
+msgstr ""
+
+#: ab-woocommerce.php:150
+msgid "Получите скидку!"
+msgstr ""
+
+#: ab-woocommerce.php:151
+msgid "Введите ваш Email и вы получите купон на скидку"
+msgstr ""
+
+#: ab-woocommerce.php:156
+msgid "Получить скидку!"
+msgstr ""
+
+#: ab-woocommerce.php:166
+msgid "Похожие товары"
+msgstr ""
+
+#: class-fast-delivery-shipping-method.php:8
+msgid "Fast Delivery Shipping Method"
+msgstr ""
+
+#: class-fast-delivery-shipping-method.php:34
+msgid "Enable/Disable"
+msgstr ""
+
+#: class-fast-delivery-shipping-method.php:36
+msgid "Enable Fast Delivery Shipping"
+msgstr ""
+
+#: class-fast-delivery-shipping-method.php:40
+msgid "Method Title"
+msgstr ""
+
+#: class-fast-delivery-shipping-method.php:42
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: class-fast-delivery-shipping-method.php:43
+msgid "Fast Delivery Shipping"
+msgstr ""
+
+#: options.php:109 options.php:137 options.php:196
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: options.php:116
+#, php-format
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: options.php:121
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: options.php:124
+msgid "Invalid license."
+msgstr ""
+
+#: options.php:128
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: options.php:131
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: options.php:134
+msgid "Your license key has reached its activation limit."
+msgstr ""
+
+#: options.php:300 options.php:362
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: options.php:318
+msgid "Код лицензии"
+msgstr ""
+
+#: options.php:322
+msgid "Введите Ваш код лицензии"
+msgstr ""
+
+#: options.php:328 options.php:339
+msgid "Активировать Лицензию"
+msgstr ""
+
+#: options.php:332
+msgid "активная"
+msgstr ""
+
+#: options.php:334
+msgid "Деактивировать Лицензию"
+msgstr ""
+
+#: options.php:512
+msgid "Фон покрывает все поле"
+msgstr ""
+
+#: options.php:512
+msgid "Фон покрывает поле сохраняя пропорции изображения"
+msgstr ""
+
+#: options.php:512
+msgid "Исходный размер изображения"
+msgstr ""
+
+#: template-tags.php:471 template-tags.php:502
+msgid "Введите ваш Email..."
+msgstr ""
+
+#: template-tags.php:723
+msgid "Pages:"
+msgstr ""
+
+#: template-tags.php:842
+#, php-format
+msgctxt " comment author"
+msgid " %1$s"
+msgstr ""
+
+#: template-tags.php:999
+#, php-format
+msgid "%d"
+msgid_plural "%d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce-functions.php:37
+msgid "Скидка"
+msgstr ""
+
+#: woocommerce-functions.php:93
+msgid "Поиск товаров"
+msgstr ""
+
+#: woocommerce-functions.php:95
+msgid "Найти"
+msgstr ""
+
+#: woocommerce-functions.php:136
+msgid "Магазин"
+msgstr ""
+
+#: woocommerce-functions.php:259
+msgid "Москва"
+msgstr ""
+
+#: woocommerce-functions.php:260
+msgid "Санкт-Петербург"
+msgstr ""
+
+#: woocommerce-functions.php:261
+msgid "Новосибирск"
+msgstr ""
+
+#: woocommerce-functions.php:262
+msgid "Екатеринбург"
+msgstr ""
+
+#: woocommerce-functions.php:263
+msgid "Нижний Новгород"
+msgstr ""
+
+#: woocommerce-functions.php:264
+msgid "Казань"
+msgstr ""
+
+#: woocommerce-functions.php:265
+msgid "Челябинск"
+msgstr ""
+
+#: woocommerce-functions.php:266
+msgid "Омск"
+msgstr ""
+
+#: woocommerce-functions.php:267
+msgid "Самара"
+msgstr ""
+
+#: woocommerce-functions.php:268
+msgid "Ростов-на-Дону"
+msgstr ""
+
+#: woocommerce-functions.php:269
+msgid "Уфа"
+msgstr ""
+
+#: woocommerce-functions.php:270
+msgid "Пермь"
+msgstr ""
+
+#: woocommerce-functions.php:271
+msgid "Красноярск"
+msgstr ""
+
+#: woocommerce-functions.php:272
+msgid "Воронеж"
+msgstr ""
+
+#: woocommerce-functions.php:273
+msgid "Волгоград"
+msgstr ""
+
+#: woocommerce-functions.php:274
+msgid "Симферополь"
+msgstr ""
+
+#: woocommerce-functions.php:275
+msgid "Агинский Бурятский авт.окр."
+msgstr ""
+
+#: woocommerce-functions.php:276
+msgid "Адыгея Республика"
+msgstr ""
+
+#: woocommerce-functions.php:277
+msgid "Алтай Республика"
+msgstr ""
+
+#: woocommerce-functions.php:278
+msgid "Алтайский край"
+msgstr ""
+
+#: woocommerce-functions.php:279
+msgid "Амурская область"
+msgstr ""
+
+#: woocommerce-functions.php:280
+msgid "Архангельская область"
+msgstr ""
+
+#: woocommerce-functions.php:281
+msgid "Астраханская область"
+msgstr ""
+
+#: woocommerce-functions.php:282
+msgid "Башкортостан республика"
+msgstr ""
+
+#: woocommerce-functions.php:283
+msgid "Белгородская область"
+msgstr ""
+
+#: woocommerce-functions.php:284
+msgid "Брянская область"
+msgstr ""
+
+#: woocommerce-functions.php:285
+msgid "Бурятия республика"
+msgstr ""
+
+#: woocommerce-functions.php:286
+msgid "Владимирская область"
+msgstr ""
+
+#: woocommerce-functions.php:287
+msgid "Волгоградская область"
+msgstr ""
+
+#: woocommerce-functions.php:288
+msgid "Вологодская область"
+msgstr ""
+
+#: woocommerce-functions.php:289
+msgid "Воронежская область"
+msgstr ""
+
+#: woocommerce-functions.php:290
+msgid "Дагестан республика"
+msgstr ""
+
+#: woocommerce-functions.php:291
+msgid "Еврейская авт. область"
+msgstr ""
+
+#: woocommerce-functions.php:292
+msgid "Ивановская область"
+msgstr ""
+
+#: woocommerce-functions.php:293
+msgid "Ингушетия республика"
+msgstr ""
+
+#: woocommerce-functions.php:294
+msgid "Иркутская область"
+msgstr ""
+
+#: woocommerce-functions.php:295
+msgid "Кабардино-Балкарская республика"
+msgstr ""
+
+#: woocommerce-functions.php:296
+msgid "Калининградская область"
+msgstr ""
+
+#: woocommerce-functions.php:297
+msgid "Калмыкия республика"
+msgstr ""
+
+#: woocommerce-functions.php:298
+msgid "Калужская область"
+msgstr ""
+
+#: woocommerce-functions.php:299
+msgid "Камчатская область"
+msgstr ""
+
+#: woocommerce-functions.php:300
+msgid "Карачаево-Черкесская республика"
+msgstr ""
+
+#: woocommerce-functions.php:301
+msgid "Карелия республика"
+msgstr ""
+
+#: woocommerce-functions.php:302
+msgid "Кемеровская область"
+msgstr ""
+
+#: woocommerce-functions.php:303
+msgid "Кировская область"
+msgstr ""
+
+#: woocommerce-functions.php:304
+msgid "Коми республика"
+msgstr ""
+
+#: woocommerce-functions.php:305
+msgid "Коми-Пермяцкий авт. окр."
+msgstr ""
+
+#: woocommerce-functions.php:306
+msgid "Корякский авт.окр."
+msgstr ""
+
+#: woocommerce-functions.php:307
+msgid "Костромская область"
+msgstr ""
+
+#: woocommerce-functions.php:308
+msgid "Краснодарский край"
+msgstr ""
+
+#: woocommerce-functions.php:309
+msgid "Красноярский край"
+msgstr ""
+
+#: woocommerce-functions.php:310
+msgid "Крым Республика"
+msgstr ""
+
+#: woocommerce-functions.php:311
+msgid "Курганская область"
+msgstr ""
+
+#: woocommerce-functions.php:312
+msgid "Курская область"
+msgstr ""
+
+#: woocommerce-functions.php:313
+msgid "Ленинградская область"
+msgstr ""
+
+#: woocommerce-functions.php:314
+msgid "Липецкая область"
+msgstr ""
+
+#: woocommerce-functions.php:315
+msgid "Магаданская область"
+msgstr ""
+
+#: woocommerce-functions.php:316
+msgid "Марий Эл республика"
+msgstr ""
+
+#: woocommerce-functions.php:317
+msgid "Мордовия республика"
+msgstr ""
+
+#: woocommerce-functions.php:318
+msgid "Московская область"
+msgstr ""
+
+#: woocommerce-functions.php:319
+msgid "Мурманская область"
+msgstr ""
+
+#: woocommerce-functions.php:320
+msgid "Ненецкий авт.окр."
+msgstr ""
+
+#: woocommerce-functions.php:321
+msgid "Нижегородская область"
+msgstr ""
+
+#: woocommerce-functions.php:322
+msgid "Новгородская область"
+msgstr ""
+
+#: woocommerce-functions.php:323
+msgid "Новосибирская область"
+msgstr ""
+
+#: woocommerce-functions.php:324
+msgid "Омская область"
+msgstr ""
+
+#: woocommerce-functions.php:325
+msgid "Оренбургская область"
+msgstr ""
+
+#: woocommerce-functions.php:326
+msgid "Орловская область"
+msgstr ""
+
+#: woocommerce-functions.php:327
+msgid "Пензенская область"
+msgstr ""
+
+#: woocommerce-functions.php:328
+msgid "Пермский край"
+msgstr ""
+
+#: woocommerce-functions.php:329
+msgid "Приморский край"
+msgstr ""
+
+#: woocommerce-functions.php:330
+msgid "Псковская область"
+msgstr ""
+
+#: woocommerce-functions.php:331
+msgid "Ростовская область"
+msgstr ""
+
+#: woocommerce-functions.php:332
+msgid "Рязанская область"
+msgstr ""
+
+#: woocommerce-functions.php:333
+msgid "Самарская область"
+msgstr ""
+
+#: woocommerce-functions.php:334
+msgid "Саратовская область"
+msgstr ""
+
+#: woocommerce-functions.php:335
+msgid "Саха(Якутия) республика"
+msgstr ""
+
+#: woocommerce-functions.php:336
+msgid "Сахалинская область"
+msgstr ""
+
+#: woocommerce-functions.php:337
+msgid "Свердловская область"
+msgstr ""
+
+#: woocommerce-functions.php:338
+msgid "Северная Осетия - Алания республика"
+msgstr ""
+
+#: woocommerce-functions.php:339
+msgid "Смоленская область"
+msgstr ""
+
+#: woocommerce-functions.php:340
+msgid "Ставропольский край"
+msgstr ""
+
+#: woocommerce-functions.php:341
+msgid "Таймырский (Долгано-Ненецкий) авт. окр."
+msgstr ""
+
+#: woocommerce-functions.php:342
+msgid "Тамбовская область"
+msgstr ""
+
+#: woocommerce-functions.php:343
+msgid "Татарстан республика"
+msgstr ""
+
+#: woocommerce-functions.php:344
+msgid "Тверская область"
+msgstr ""
+
+#: woocommerce-functions.php:345
+msgid "Томская область"
+msgstr ""
+
+#: woocommerce-functions.php:346
+msgid "Тыва республика"
+msgstr ""
+
+#: woocommerce-functions.php:347
+msgid "Тульская область"
+msgstr ""
+
+#: woocommerce-functions.php:348
+msgid "Тюменская область"
+msgstr ""
+
+#: woocommerce-functions.php:349
+msgid "Удмуртская республика"
+msgstr ""
+
+#: woocommerce-functions.php:350
+msgid "Ульяновская область"
+msgstr ""
+
+#: woocommerce-functions.php:351
+msgid "Усть-Ордынский Бурятский авт.окр."
+msgstr ""
+
+#: woocommerce-functions.php:352
+msgid "Хабаровский край"
+msgstr ""
+
+#: woocommerce-functions.php:353
+msgid "Хакасия республика"
+msgstr ""
+
+#: woocommerce-functions.php:354
+msgid "Ханты-Мансийский авт.окр."
+msgstr ""
+
+#: woocommerce-functions.php:355
+msgid "Челябинская область"
+msgstr ""
+
+#: woocommerce-functions.php:356
+msgid "Чеченская республика"
+msgstr ""
+
+#: woocommerce-functions.php:357
+msgid "Читинская область"
+msgstr ""
+
+#: woocommerce-functions.php:358
+msgid "Чувашская республика"
+msgstr ""
+
+#: woocommerce-functions.php:359
+msgid "Чукотский авт.окр."
+msgstr ""
+
+#: woocommerce-functions.php:360
+msgid "Эвенкийский авт.окр."
+msgstr ""
+
+#: woocommerce-functions.php:361
+msgid "Ямало-Ненецкий авт.окр."
+msgstr ""
+
+#: woocommerce-functions.php:362
+msgid "Ярославская область"
+msgstr ""
+
+#: woocommerce-functions.php:458
+msgid "Купить"
+msgstr ""
+
+#: woocommerce-functions.php:461
+msgid "Посмотреть"
+msgstr ""
+
+#: woocommerce-functions.php:464
+msgid "В корзину"
+msgstr ""
+
+#: woocommerce-functions.php:467
+msgid "Выбрать"
+msgstr ""
+
+#: woocommerce-functions.php:470
+msgid "Читать далее"
+msgstr ""
+
+#: woocommerce-functions.php:486
+msgid "Подробнее"
+msgstr ""
+
+#: woocommerce-functions.php:513
+msgid "Текст когда нет методов доставки"
+msgstr ""
+
+#: woocommerce-functions.php:514
+msgid "Это сообщение показывается когда нет методов доставки"
+msgstr ""
+
+#: woocommerce-functions.php:528
+msgid "Изменить текст"
+msgstr ""
+
+#: woocommerce/custom-widgets/ab-class-wc-widget-price-filter.php:25
+msgid ""
+"Shows a price filter slider in a widget which lets you narrow down the list "
+"of shown products when viewing product categories."
+msgstr ""
+
+#: woocommerce/custom-widgets/ab-class-wc-widget-price-filter.php:27
+msgid "WooCommerce Price Filter"
+msgstr ""
+
+#: woocommerce/custom-widgets/ab-class-wc-widget-price-filter.php:31
+msgid "Filter by price"
+msgstr ""
+
+#: woocommerce/custom-widgets/ab-class-wc-widget-price-filter.php:32
+msgid "Title"
+msgstr ""
+
+#: woocommerce/custom-widgets/ab-class-wc-widget-price-filter.php:152
+msgid "Min price"
+msgstr ""
+
+#: woocommerce/custom-widgets/ab-class-wc-widget-price-filter.php:153
+msgid "Max price"
+msgstr ""
+
+#: woocommerce/custom-widgets/ab-class-wc-widget-price-filter.php:154
+msgid "ОК"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:32
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:43
+msgid "Clear"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variation.php:31
+msgid ""
+"Sorry, this product is unavailable. Please choose a different combination."
+msgstr ""
+
+#: woocommerce/single-product/meta.php:35
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:35
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:39
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:41
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/product-attributes.php:38
+msgid "Weight"
+msgstr ""
+
+#: woocommerce/single-product/product-attributes.php:45
+msgid "Dimensions"
+msgstr ""
+
+#: woocommerce/single-product/product-image.php:47
+msgid "Placeholder"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:36
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:38
+#, php-format
+msgid "out of %s5%s"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:39
+#, php-format
+msgid "based on %s customer rating"
+msgid_plural "based on %s customer ratings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/rating.php:42
+#, php-format
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:40
+msgid "Related Products"
+msgstr ""
+
+#: woocommerce/single-product/review-meta.php:28
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: woocommerce/single-product/review-meta.php:36
+msgid "verified owner"
+msgstr ""
+
+#: woocommerce/single-product/review-rating.php:28
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review-rating.php:29
+msgid "out of 5"
+msgstr ""
+
+#: woocommerce/single-product/sale-flash.php:28
+msgid "Sale!"
+msgstr ""
+
+#: woocommerce/single-product/tabs/additional-information.php:25
+msgid "Additional Information"
+msgstr ""
+
+#: woocommerce/single-product/tabs/description.php:25
+msgid "Description"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:48
+msgid "You may also like&hellip;"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "AB WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://anfisabreus.ru/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Плагин интеграции интернет магазина \"WooCommerce\""
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Анфиса Бреус"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Витрина магазина"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Шаблон для страниц магазина"
+msgstr ""

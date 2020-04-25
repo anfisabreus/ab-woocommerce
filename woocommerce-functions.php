@@ -32,18 +32,18 @@ add_filter( 'woocommerce_locate_template', 'ab_woo_adon_plugin_template', 1, 3 )
 
 
 
-
-
 add_filter('woocommerce_sale_flash', 'avia_change_sale_content', 10, 3);
 function avia_change_sale_content($content, $post, $product){
-$content = '<span class="onsale">'.__( 'Скидка', 'woocommerce' ).'</span>';
+$content = '<span class="onsale">'.__( 'Скидка', 'abwoocommerce' ).'</span>';
 return $content;
 }
 
  
 
 // Display 24 products per page. Goes in functions.php
-add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );
+
+
+add_filter('loop_shop_per_page', function($cols) {return 24;});
 
 
 
@@ -92,9 +92,9 @@ function woo_custom_product_searchform( $form ) {
 	
 	<div class="input-group">
 
-	<input type="search" id="woocommerce-product-search-field" class="search-field form-control search-query input1" placeholder="' . __( 'Поиск товаров', 'woocommerce' ) . '" value="' . get_search_query() . '" name="s" title="Search for" />
+	<input type="search" id="woocommerce-product-search-field" class="search-field form-control search-query input1" placeholder="' . __( 'Поиск товаров', 'abwoocommerce' ) . '" value="' . get_search_query() . '" name="s" title="Search for" />
 	<span class="input-group-btn">
-	<button type="submit" class="btn btn-default" id="searchsubmit" value="'. esc_attr__( 'Найти', 'woocommerce' ) .'" /><i class="fa fa-search"></i></button></span>
+	<button type="submit" class="btn btn-default" id="searchsubmit" value="'. esc_attr__( 'Найти', 'abwoocommerce' ) .'" /><i class="fa fa-search"></i></button></span>
 	<input type="hidden" name="post_type" value="product" />
 	</div>
 </form>';
@@ -110,7 +110,9 @@ function abwoocommerce_template_loop_category_link_open( $category ) {
 add_filter( 'abwoocommerce_before_subcategory', 'abwoocommerce_template_loop_category_link_open', 10 );
 
 
-
+global $post;
+  if( !is_object($post) ) 
+        return;
 $terms = get_the_terms( $post->ID, 'product_tag' );
 if ($terms && ! is_wp_error($terms)): ?>
     <?php foreach($terms as $term): ?>
@@ -135,7 +137,7 @@ $prod_term=get_term($cat_id,'product_cat');
 $description=$prod_term->description;
 if ($description !=='') {
 echo '<div class="shop_cat_desc"><span class="cat-desc-bg">'.$description.'</span></div>'; }?>
-</div><div class="button-homepage">Магазин</div>
+</div><div class="button-homepage"> <?php _e('Магазин', 'abwoocommerce'); ?></div>
 		
 		<?php
 		}
@@ -152,8 +154,10 @@ add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10,
 
 function change_existing_currency_symbol( $currency_symbol, $currency ) {
      switch( $currency ) {
-          case 'RUB': $currency_symbol = '<i class="fa fa-rub"></i>'; break;
-          case 'UAH': $currency_symbol = 'грн.'; break;
+          case 'RUB': $currency_symbol = '&#x20bd;'; break;
+          case 'UAH': $currency_symbol = '&#8372;'; break;
+          
+          
      }
      return $currency_symbol;
 }
@@ -258,110 +262,110 @@ if ( !is_plugin_active( 'wc-edostavka/wc-edostavka.php' )) {
 add_filter( 'woocommerce_states', 'ab_custom_woocommerce_states' );
  function ab_custom_woocommerce_states( $states ) {
   $states['RU'] = array(
-    'MSK' => 'Москва',
-    'SPB' => 'Санкт-Петербург',
-    'NOV' => 'Новосибирск',
-    'EKB' => 'Екатеринбург',
-    'NN' => 'Нижний Новгород',
-    'KZN' => 'Казань',
-    'CHL' => 'Челябинск',
-    'OMSK' => 'Омск',
-    'SMR' => 'Самара',
-    'RND' => 'Ростов-на-Дону',
-    'UFA' => 'Уфа',
-    'PRM' => 'Пермь',
-    'KRN' => 'Красноярск',
-    'VRZH' => 'Воронеж',
-    'VLG' => 'Волгоград',
-    'SIMF' => 'Симферополь',
-    'ABAO' => 'Агинский Бурятский авт.окр.',
-    'AR' => 'Адыгея Республика',
-    'ALR' => 'Алтай Республика',
-    'AK' => 'Алтайский край',
-    'AMO' => 'Амурская область',
-    'ARO' => 'Архангельская область',
-    'ACO' => 'Астраханская область',
-    'BR' => 'Башкортостан республика',
-    'BEO' => 'Белгородская область',
-    'BRO' => 'Брянская область',
-    'BUR' => 'Бурятия республика',
-    'VLO' => 'Владимирская область',
-    'VOO' => 'Волгоградская область',
-    'VOLGO' => 'Вологодская область',
-    'VORO' => 'Воронежская область',
-    'DR' => 'Дагестан республика',
-    'EVRAO' => 'Еврейская авт. область',
-    'IO' => 'Ивановская область',
-    'IR' => 'Ингушетия республика',
-    'IRO' => 'Иркутская область',
-    'KBR' => 'Кабардино-Балкарская республика',
-    'KNO' => 'Калининградская область',
-    'KMR' => 'Калмыкия республика',
-    'KLO' => 'Калужская область',
-    'KMO' => 'Камчатская область',
-    'KCHR' => 'Карачаево-Черкесская республика',
-    'KR' => 'Карелия республика',
-    'KEMO' => 'Кемеровская область',
-    'KIRO' => 'Кировская область',
-    'KOMI' => 'Коми республика',
-    'KPAO' => 'Коми-Пермяцкий авт. окр.',
-    'KRAO' => 'Корякский авт.окр.',
-    'KOSO' => 'Костромская область',
-    'KRSO' => 'Краснодарский край',
-    'KRNO' => 'Красноярский край',
-    'KRYM' => 'Крым Республика',
-    'KURGO' => 'Курганская область',
-    'KURO' => 'Курская область',
-    'LENO' => 'Ленинградская область',
-    'LPO' => 'Липецкая область',
-    'MAGO' => 'Магаданская область',
-    'MER' => 'Марий Эл республика',
-    'MOR' => 'Мордовия республика',
-    'MSKO' => 'Московская область',
-    'MURO' => 'Мурманская область',
-    'NAO' => 'Ненецкий авт.окр.',
-    'NZHO' => 'Нижегородская область',
-    'NVGO' => 'Новгородская область',
-    'NVO' => 'Новосибирская область',
-    'OMO' => 'Омская область',
-    'OPENO' => 'Оренбургская область',
-    'OPLO' => 'Орловская область',
-    'PENO' => 'Пензенская область',
-    'PERO' => 'Пермский край',
-    'PRO' => 'Приморский край',
-    'PSO' => 'Псковская область',
-    'RSO' => 'Ростовская область',
-    'RZO' => 'Рязанская область',
-    'SMRO' => 'Самарская область',
-    'SRP' => 'Саратовская область',
-    'SYAR' => 'Саха(Якутия) республика',
-    'SKHO' => 'Сахалинская область',
-    'SVO' => 'Свердловская область',
-    'SOAR' => 'Северная Осетия - Алания республика',
-    'SMO' => 'Смоленская область',
-    'STK' => 'Ставропольский край',
-    'TRAO' => 'Таймырский (Долгано-Ненецкий) авт. окр.',
-    'TMBO' => 'Тамбовская область',
-    'TTR' => 'Татарстан республика',
-    'TVO' => 'Тверская область',
-    'TMO' => 'Томская область',
-    'TVR' => 'Тыва республика',
-    'TULO' => 'Тульская область',
-    'TUMO' => 'Тюменская область',
-    'UDO' => 'Удмуртская республика',
-    'ULO' => 'Ульяновская область',
-    'UOBAO' => 'Усть-Ордынский Бурятский авт.окр.',
-    'KHBK' => 'Хабаровский край',
-    'KHKR' => 'Хакасия республика',
-    'KHMAO' => 'Ханты-Мансийский авт.окр.',
-    'CHLO' => 'Челябинская область',
-    'CHCHR' => 'Чеченская республика',
-    'CHTO' => 'Читинская область',
-    'CHVR' => 'Чувашская республика',
-    'CHKAO' => 'Чукотский авт.окр.',
-    'EVAO' => 'Эвенкийский авт.окр.',
-    'YANO' => 'Ямало-Ненецкий авт.окр.',
-    'YAO' => 'Ярославская область'
+    'MSK' => __('Москва', 'abwoocommerce'),
+    'SPB' => __('Санкт-Петербург', 'abwoocommerce'),
+    'NOV' => __('Новосибирск', 'abwoocommerce'),
+    'EKB' => __('Екатеринбург', 'abwoocommerce'),
+    'NN' => __('Нижний Новгород', 'abwoocommerce'),
+    'KZN' => __('Казань', 'abwoocommerce'),
+    'CHL' => __('Челябинск', 'abwoocommerce'),
+    'OMSK' => __('Омск', 'abwoocommerce'),
+    'SMR' => __('Самара', 'abwoocommerce'),
+    'RND' => __('Ростов-на-Дону', 'abwoocommerce'),
+    'UFA' => __('Уфа', 'abwoocommerce'),
+    'PRM' => __('Пермь', 'abwoocommerce'),
+    'KRN' => __('Красноярск', 'abwoocommerce'),
+    'VRZH' => __('Воронеж', 'abwoocommerce'),
+    'VLG' => __('Волгоград', 'abwoocommerce'),
+    'SIMF' => __('Симферополь', 'abwoocommerce'),
+    'ABAO' => __('Агинский Бурятский авт.окр.', 'abwoocommerce'),
+    'AR' => __('Адыгея Республика', 'abwoocommerce'),
+    'ALR' => __('Алтай Республика', 'abwoocommerce'),
+    'AK' => __('Алтайский край', 'abwoocommerce'),
+    'AMO' => __('Амурская область', 'abwoocommerce'),
+    'ARO' => __('Архангельская область', 'abwoocommerce'),
+    'ACO' => __('Астраханская область', 'abwoocommerce'),
+    'BR' => __('Башкортостан республика', 'abwoocommerce'),
+    'BEO' => __('Белгородская область', 'abwoocommerce'),
+    'BRO' => __('Брянская область', 'abwoocommerce'),
+    'BUR' => __('Бурятия республика', 'abwoocommerce'),
+    'VLO' => __('Владимирская область', 'abwoocommerce'),
+    'VOO' => __('Волгоградская область', 'abwoocommerce'),
+    'VOLGO' => __('Вологодская область', 'abwoocommerce'),
+    'VORO' => __('Воронежская область', 'abwoocommerce'),
+    'DR' => __('Дагестан республика', 'abwoocommerce'),
+    'EVRAO' => __('Еврейская авт. область', 'abwoocommerce'),
+    'IO' => __('Ивановская область', 'abwoocommerce'),
+    'IR' => __('Ингушетия республика', 'abwoocommerce'),
+    'IRO' => __('Иркутская область', 'abwoocommerce'),
+    'KBR' => __('Кабардино-Балкарская республика', 'abwoocommerce'),
+    'KNO' => __('Калининградская область', 'abwoocommerce'),
+    'KMR' => __('Калмыкия республика', 'abwoocommerce'),
+    'KLO' => __('Калужская область', 'abwoocommerce'),
+    'KMO' => __('Камчатская область', 'abwoocommerce'),
+    'KCHR' => __('Карачаево-Черкесская республика', 'abwoocommerce'),
+    'KR' => __('Карелия республика', 'abwoocommerce'),
+    'KEMO' => __('Кемеровская область', 'abwoocommerce'),
+    'KIRO' => __('Кировская область', 'abwoocommerce'),
+    'KOMI' => __('Коми республика', 'abwoocommerce'),
+    'KPAO' => __('Коми-Пермяцкий авт. окр.', 'abwoocommerce'),
+    'KRAO' => __('Корякский авт.окр.', 'abwoocommerce'),
+    'KOSO' => __('Костромская область', 'abwoocommerce'),
+    'KRSO' => __('Краснодарский край', 'abwoocommerce'),
+    'KRNO' => __('Красноярский край', 'abwoocommerce'),
+    'KRYM' => __('Крым Республика', 'abwoocommerce'),
+    'KURGO' => __('Курганская область', 'abwoocommerce'),
+    'KURO' => __('Курская область', 'abwoocommerce'),
+    'LENO' => __('Ленинградская область', 'abwoocommerce'),
+    'LPO' => __('Липецкая область', 'abwoocommerce'),
+    'MAGO' => __('Магаданская область', 'abwoocommerce'),
+    'MER' => __('Марий Эл республика', 'abwoocommerce'),
+    'MOR' => __('Мордовия республика', 'abwoocommerce'),
+    'MSKO' => __('Московская область', 'abwoocommerce'),
+    'MURO' => __('Мурманская область', 'abwoocommerce'),
+    'NAO' => __('Ненецкий авт.окр.', 'abwoocommerce'),
+    'NZHO' => __('Нижегородская область', 'abwoocommerce'),
+    'NVGO' => __('Новгородская область', 'abwoocommerce'),
+    'NVO' => __('Новосибирская область', 'abwoocommerce'),
+    'OMO' => __('Омская область', 'abwoocommerce'),
+    'OPENO' => __('Оренбургская область', 'abwoocommerce'),
+    'OPLO' => __('Орловская область', 'abwoocommerce'),
+    'PENO' => __('Пензенская область', 'abwoocommerce'),
+    'PERO' => __('Пермский край', 'abwoocommerce'),
+    'PRO' => __('Приморский край', 'abwoocommerce'),
+    'PSO' => __('Псковская область', 'abwoocommerce'),
+    'RSO' => __('Ростовская область', 'abwoocommerce'),
+    'RZO' => __('Рязанская область', 'abwoocommerce'),
+    'SMRO' => __('Самарская область', 'abwoocommerce'),
+    'SRP' => __('Саратовская область', 'abwoocommerce'),
+    'SYAR' => __('Саха(Якутия) республика', 'abwoocommerce'),
+    'SKHO' => __('Сахалинская область', 'abwoocommerce'),
+    'SVO' => __('Свердловская область', 'abwoocommerce'),
+    'SOAR' => __('Северная Осетия - Алания республика', 'abwoocommerce'),
+    'SMO' => __('Смоленская область', 'abwoocommerce'),
+    'STK' => __('Ставропольский край', 'abwoocommerce'),
+    'TRAO' => __('Таймырский (Долгано-Ненецкий) авт. окр.', 'abwoocommerce'),
+    'TMBO' => __('Тамбовская область', 'abwoocommerce'),
+    'TTR' => __('Татарстан республика', 'abwoocommerce'),
+    'TVO' => __('Тверская область', 'abwoocommerce'),
+    'TMO' => __('Томская область', 'abwoocommerce'),
+    'TVR' => __('Тыва республика', 'abwoocommerce'),
+    'TULO' => __('Тульская область', 'abwoocommerce'),
+    'TUMO' => __('Тюменская область', 'abwoocommerce'),
+    'UDO' => __('Удмуртская республика', 'abwoocommerce'),
+    'ULO' => __('Ульяновская область', 'abwoocommerce'),
+    'UOBAO' => __('Усть-Ордынский Бурятский авт.окр.', 'abwoocommerce'),
+    'KHBK' => __('Хабаровский край', 'abwoocommerce'),
+    'KHKR' => __('Хакасия республика', 'abwoocommerce'),
+    'KHMAO' => __('Ханты-Мансийский авт.окр.', 'abwoocommerce'),
+    'CHLO' => __('Челябинская область', 'abwoocommerce'),
+    'CHCHR' => __('Чеченская республика', 'abwoocommerce'),
+    'CHTO' => __('Читинская область', 'abwoocommerce'),
+    'CHVR' => __('Чувашская республика', 'abwoocommerce'),
+    'CHKAO' => __('Чукотский авт.окр.', 'abwoocommerce'),
+    'EVAO' => __('Эвенкийский авт.окр.', 'abwoocommerce'),
+    'YANO' => __('Ямало-Ненецкий авт.окр.', 'abwoocommerce'),
+    'YAO' => __('Ярославская область', 'abwoocommerce')
   
   );
  
@@ -457,19 +461,19 @@ function custom_one_woocommerce_product_add_to_cart_text() {
 	
 	switch ( $product_type ) {
 		case 'external':
-			return __( 'Купить', 'woocommerce' );
+			return __( 'Купить', 'abwoocommerce' );
 		break;
 		case 'grouped':
-			return __( 'Посмотреть', 'woocommerce' );
+			return __( 'Посмотреть', 'abwoocommerce' );
 		break;
 		case 'simple':
-			return __( 'В корзину', 'woocommerce' );
+			return __( 'В корзину', 'abwoocommerce' );
 		break;
 		case 'variable':
-			return __( 'Выбрать', 'woocommerce' );
+			return __( 'Выбрать', 'abwoocommerce' );
 		break;
 		default:
-			return __( 'Читать далее', 'woocommerce' );
+			return __( 'Читать далее', 'abwoocommerce' );
 	
 }
 
@@ -485,7 +489,7 @@ if (!function_exists('woocommerce_template_loop_add_to_cart')) {
 function woocommerce_template_loop_add_to_cart() {
 global $product;
 if ('' === $product->get_price() ) {
-	echo '<a href="'. get_permalink() .'" class="button">Подробнее</a> ';
+	echo '<a href="'. get_permalink() .'" class="button">'. __('Подробнее', 'abwoocommerce') .'</a> ';
 } 
 else 
 { 
@@ -512,8 +516,8 @@ call_user_func(function()
             $noShippingMessageField = array(
                 'id' => AB_OPTION_ID,
                 'type' => 'textarea',
-                'title' => __('Текст когда нет методов доставки', 'inspiration'),
-                'desc' => __('Это сообщение показывается когда нет методов доставки', 'inspiration'),
+                'title' => __('Текст когда нет методов доставки', 'abwoocommerce'),
+                'desc' => __('Это сообщение показывается когда нет методов доставки', 'abwoocommerce'),
                 'default' => '',
                 'css' => 'width:350px; height: 65px;',
             );
@@ -527,7 +531,7 @@ call_user_func(function()
 
         add_filter('plugin_action_links_' . plugin_basename(wp_normalize_path(__FILE__)), function($links) {
             $settingsUrl = admin_url('admin.php?page=wc-settings&tab=shipping&section=options#' . urlencode(AB_OPTION_ID));
-            array_unshift($links, '<a href="'.esc_html($settingsUrl).'">'.__('Изменить текст', 'inspiration').'</a>');
+            array_unshift($links, '<a href="'.esc_html($settingsUrl).'">'. __('Изменить текст', 'abwoocommerce') .'</a>');
             return $links;
         });
     }
@@ -541,7 +545,7 @@ call_user_func(function()
 function my_text_strings( $translated_text, $text, $domain ) {
 global $ab_woocommerce;
 	switch ( $translated_text ) {
-		case 'Похожие товары' :
+		case 'Похожие товары':
 			$translated_text = $ab_woocommerce['related_product_text'];
 			break;
 	}
