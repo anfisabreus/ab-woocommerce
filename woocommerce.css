@@ -239,9 +239,13 @@ table.variations .lable{border:none}
 .woocommerce-MyAccount-navigation{padding-top:20px;background:#fff !important}
 .woocommerce-account .woocommerce-MyAccount-content{padding:20px 0px;background:#fff !important;float:none;width:100%}
 .woocommerce-account .woocommerce-MyAccount-navigation{float:none;width:100%}
-.woocommerce-MyAccount-navigation ul li{display:inline;margin-right:20px;padding:10px 20px;}
+.woocommerce-MyAccount-navigation ul li{display:inline;margin-right:20px;}
+.woocommerce-account #wpcw_fe_course tr.wpcw_fe_unit{ padding-left:20px !important; padding-right:20px !important;}
+.woocommerce-MyAccount-navigation ul li a {display: block;height: 100%;padding: 10px 20px; }
 .woocommerce-MyAccount-navigation ul{margin-left:0px;margin-bottom:0px;padding-bottom:7px; list-style:none}
 .woocommerce-MyAccount-navigation ul li a{color:#333;text-decoration:none}
+.woocommerce-account #wpcw_fe_course_progress .wpcw_fe_course_progress_detail table {width: auto;border: 1px solid #eaeaea !important;padding: 20px !important;margin: 20px 30px !important;}
+.woocommerce-account  #wpcw_fe_course_progress td.wpcw_fe_course_progress_detail {padding: 0px;background: transparent;display: none;}
 .entry-box.ab-inspiration-woocommerce-entry-home{padding-left:25px !important;padding-right:25px !important;}
 .display-none{display:none}
 .shop_cat_desc, .cat-title-homepage{padding:10px;}
@@ -313,7 +317,7 @@ table.shop_attributes, .woocommerce table.shop_attributes .alt td, .woocommerce 
 #headercssmenu .cart-in-menu.current-menu-item{float:right}
 #headercssmenu .cart-contents .amount, .menu-header .cart-contents .amount{display:none;}
 #headercssmenu .cart-contents:before, .menu-header a.cart-contents:before, .navbar a.cart-contents{line-height:20px !important;font-size:20px;}
-#headercssmenu .cart-contents .count, .menu-header .cart-contents .count, .navbar .cart-contents .count{line-height:20px !important;position:relative;bottom:-3px;right:13px;font-size:10px;font-weight:300;border-radius:50%;padding:1px 4px;text-align:center;opacity:1;}
+#headercssmenu .cart-contents .count, .menu-header .cart-contents .count, .navbar .cart-contents .count{line-height:20px !important;position:relative;bottom:-3px;right:10px;font-size:10px;font-weight:300;border-radius:50%;padding:1px 4px;text-align:center;opacity:1;}
 #headercssmenu ul li a.cart-contents:after{content:"";display:block;height:0px !important;width:0;background:transparent;transition:width .5s ease, background-color .5s ease;}
 #headercssmenu ul li.cart-in-menu:hover > a{background:none !important;}
 #wrapper #access li.cart-in-menu{background:transparent !important;}
@@ -329,3 +333,10 @@ ul.products li.product img:hover, #content .home-level2 .woocommerce.columns-3 u
     float: none;
     content: "\e900" !important;
 }
+#wpcw_fe_course_progress td, #wpcw_fe_course_progress th {padding:10px !important}
+
+@media only screen and (max-width: 690px) {
+.woocommerce-account #wpcw_fe_course_progress .wpcw_fe_course_progress_detail table {margin:0px !important}
+#primary #wpcw_fe_course td.wpcw_fe_unit_title, #primary #wpcw_fe_course td.wpcw_fe_unit, #wpcw_fe_course_progress, #content #wpcw_fe_course td.wpcw_fe_unit_title, #content #wpcw_fe_course td.wpcw_fe_unit {font-size:14px !important}
+#wpcw_fe_course_progress .wpcw_fe_course_progress_pc, #wpcw_fe_course_progress th.wpcw_fe_course_progress_course, .wpcw_progress_percent {font-size:12px !important}
+	}
