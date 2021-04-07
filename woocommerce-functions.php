@@ -537,21 +537,6 @@ call_user_func(function()
     }
 });
 
-/**
- * Change text strings
- *
- * @link http://codex.wordpress.org/Plugin_API/Filter_Reference/gettext
- */
-function my_text_strings( $translated_text, $text, $domain ) {
-global $ab_woocommerce;
-	switch ( $translated_text ) {
-		case 'Похожие товары':
-			$translated_text = $ab_woocommerce['related_product_text'];
-			break;
-	}
-	return $translated_text;
-}
-add_filter( 'gettext', 'my_text_strings', 20, 3 );
 
 
 
