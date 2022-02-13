@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: AB WooCommerce
-Version: 2.20
+Version: 2.21
 Plugin URI: http://anfisabreus.ru/
 Description: Плагин интеграции интернет магазина "WooCommerce" 
 Author: Анфиса Бреус
@@ -263,7 +263,7 @@ function edd_woocommerce_plugin_updater() {
 	// setup the updater
 	$edd_updater = new EDD_WOOCOMMERCE_Plugin_Updater( EDD_WOOCOMMERCE_STORE_URL, __FILE__,
 		array(
-			'version' => '2.20',                    // current version number
+			'version' => '2.21',                    // current version number
 			'license' => $license_key,             // license key (used get_option above to retrieve from DB)
 			'item_id' => EDD_WOOCOMMERCE_ITEM_ID,       // ID of the product
 			'author'  => 'Anfisa Breus', // author of this plugin
