@@ -146,11 +146,6 @@ tr.cart_item td.product-price, tr.cart_item td.product-subtotal, tr.cart_item td
 
 
 .woocommerce ul.products {margin-bottom:0px !important}
-
-.woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce ul.products li.last, .woocommerce-page ul.products li.last {padding:0px; text-align:center; background:#fff; <?php if ($ab_woocommerce['show_border_product'] == '1') { ?> border:1px solid #eaeaea <?php } else { echo 'border:none !important'; } ?>}
-
-
-
  
 .woocommerce ul.products li.product:hover, .woocommerce-page ul.products li.product:hover,.post-homepage-shop:hover {padding:0px; }
 .woocommerce ul.products li.product .img-wrap .star-rating{margin:0px 20px;}

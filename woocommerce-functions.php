@@ -110,15 +110,6 @@ function abwoocommerce_template_loop_category_link_open( $category ) {
 add_filter( 'abwoocommerce_before_subcategory', 'abwoocommerce_template_loop_category_link_open', 10 );
 
 
-global $post;
-  if( !is_object($post) ) 
-        return;
-$terms = get_the_terms( $post->ID, 'product_tag' );
-if ($terms && ! is_wp_error($terms)): ?>
-    <?php foreach($terms as $term): ?>
-        <a href="<?php echo get_term_link( $term->slug, 'product_tag'); ?>" rel="tag" class="<?php echo $term->slug; ?>"><?php echo $term->name; ?></a>
-    <?php endforeach; ?>
-<?php endif; 
 
 
 function abinspiration_shop_loop_subcategory_title( $category ) {

@@ -489,7 +489,7 @@ $ab_woocommerce['checkout_free_shipping'] = $_POST['checkout_free_shipping'];
 $ab_woocommerce['show_cat_product'] = $_POST['show_cat_product'];
 $ab_woocommerce['related_product_text'] = $_POST['related_product_text'];
 $ab_woocommerce['ab_swatches_check'] = $_POST['ab_swatches_check'];
-$ab_woocommerce['show_border_product'] = $_POST['show_border_product'];
+
 $ab_woocommerce['show_cat_title'] = $_POST['show_cat_title'];
 $ab_woocommerce['show_cat_desc'] = $_POST['show_cat_desc'];
 
@@ -591,21 +591,13 @@ if ($status !== false && $status == 'valid' ) { ?>
 <div style="margin-right:20px; float:left">
 <input type="checkbox" name="show_cat_product" value="1" <?php if ( $ab_woocommerce['show_cat_product']) echo 'checked="checked"'; ?>>
 <strong>Да/нет </strong><br><br>
+
+
 </div>
 </td>
 </tr>
 
 
-<tr valign="top">
-<th scope="row">Отображать границу вокруг товаров?</th>
-<td colspan="2">
-
-<div style="margin-right:20px; float:left">
-<input type="checkbox" name="show_border_product" value="1" <?php if ( $ab_woocommerce['show_border_product']) echo 'checked="checked"'; ?>>
-<strong>Да/нет </strong><br><br>
-</div>
-</td>
-</tr>
 
 
 

@@ -1014,9 +1014,6 @@ if ( $ab_woocommerce['menu'] == '1')   $menu = "primary"; if ( $ab_woocommerce['
 
 
 
-
-
-
 add_filter( 'woocommerce_get_price_html', 'ab_price_free_zero_empty', 100, 2 );
   
 function ab_price_free_zero_empty( $price, $product ){
@@ -1027,4 +1024,6 @@ if ( '' === $product->get_price() || 0 == $product->get_price() ) {
  
 return $price;
 }
+
+
 
