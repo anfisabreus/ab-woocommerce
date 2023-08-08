@@ -233,7 +233,7 @@ h1.product_title.entry-title{padding-bottom:5px !important;}
 .woocommerce #reviews #comments ol.commentlist li{padding:10px}
 table.variations .lable{border:none}
 .woocommerce ul.products li.last, .woocommerce-page ul.products li.last{margin-right:0px !important}
-.columns-4 .related.products ul.products li, .up-sells.upsells.products ul.products li{width:23.5% !important}
+.columns-4 .related.products ul.products li, .up-sells.upsells.products ul.products li{width:23.5%}
 .shop_table{background:#fff}
 .woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span{font-size:1.3em;font-weight:400;padding:.9em;}
 .woocommerce nav.woocommerce-pagination{text-align:left}
