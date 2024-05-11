@@ -440,15 +440,13 @@ if ( in_array( 'woocommerce/woocommerce.php', $active_plugins) ) {
 
 
 
-
-
-add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_one_woocommerce_product_add_to_cart_text' );
+/* add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_one_woocommerce_product_add_to_cart_text' );
 
 function custom_one_woocommerce_product_add_to_cart_text() {
 
  global $product;
 	
-	$product_type = $product->product_type;
+	$product_type = $product->get_type();
 	
 	switch ( $product_type ) {
 		case 'external':
@@ -470,7 +468,7 @@ function custom_one_woocommerce_product_add_to_cart_text() {
 
 
 }
-
+*/
 
 
 /*
